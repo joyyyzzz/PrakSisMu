@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="materi.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi</title>
+</head>
+<body>
+    <nav class="navigator">
+        <div class="logo">
+            <img src="moon.png" alt="moonlogo">
+        </div>
+        <ul class="nav-links">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link" id="link2"><a href="#">Materi</a></li>
+            <li class="link" id="link1"><a href="about.html">About Me</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-container">
+        <aside class="materi">
+            <h2>Materi</h2>
+            <ul>
+                <li>Inline CSS</li>
+                <li>Internal CSS</li>
+                <li>External CSS</li>
+                <li>CSS Fonts</li>
+                <li>HTML5 datalist Elemen</li>
+                <li>HTML5 keygen Elemen</li>
+            </ul>
+        </aside>
+
+        <section class="content-area">
+            <h3>Dasar Teori</h3>
+            <p>
+                Dalam modul ini, kita akan membahas bentuk CSS, elemen layout HTML, dan elemen form HTML5.
+            </p>
+            <p>
+                CSS (Cascading Style Sheets) menggambarkan bagaimana elemen-elemen HTML ditampilkan pada layar, kertas, atau media lainnya. CSS mempersingkat pekerjaan dengan cara mengendalikan tampilan (layout) beberapa halaman web sekaligus.
+            </p>
+        </section>
+    </div>
+
+    <div class="main-container">
+        <aside class="materi">
+            <h2>Inline CSS</h2>
+        </aside>
+
+        <section class="content-area">
+            <h3>Penggunaan Inline CSS</h3>
+            <p>
+                Inline CSS adalah cara menambahkan style langsung di dalam tag HTML dengan menggunakan atribut `style`. Biasanya digunakan untuk pengaturan cepat atau ketika style hanya diterapkan pada satu elemen saja.
+            </p>
+            <pre>
+                Contoh:
+                &lt;p style="color: red;"&gt;Ini adalah teks merah&lt;/p&gt;
+            </pre>
+        </section>
+    </div>
+
+    <div class="main-container">
+        <aside class="materi">
+            <h2>Internal CSS</h2>
+        </aside>
+
+        <section class="content-area">
+            <h3>Penggunaan Internal CSS</h3>
+            <p>
+                Digunakan untuk mendefinisikan gaya untuk halaman HTML tunggal. Internal CSS
+didefinisikan pada bagian `head` dari halaman HTML, dengan elemen style.
+            </p>
+            <pre>
+                Contoh:
+                &lt;style&gt; 
+                    p {
+                        color: blue;
+                    }
+                &lt;/style&gt;
+            </pre>
+        </section>
+    </div>
+
+    <div class="main-container">
+        <aside class="materi">
+            <h2>External CSS</h2>
+        </aside>
+
+        <section class="content-area">
+            <h3>Penggunaan External CSS</h3>
+            <p>
+                External CSS memungkinkan kita menuliskan style di file terpisah dengan ekstensi `.css`. File ini kemudian di-link ke beberapa halaman HTML, membuat perubahan layout atau tampilan menjadi lebih efisien.
+            </p>
+            <pre>
+                Contoh:
+                &lt;link rel="stylesheet" href="styles.css"&gt;
+            </pre>
+        </section>
+    </div>
+
+    <div class="main-container">
+        <aside class="materi">
+            <h2>CSS Fonts</h2>
+        </aside>
+
+        <section class="content-area">
+            <h3>Penggunaan CSS Fonts</h3>
+            <p>
+                Color property mendefinisikan warna teks yang digunakan. Font-family property mendefinisikan huruf (font) yang digunakan. Font-size property mendefinisikan ukuran teks yang digunakan.
+            </p>
+            <pre>
+                Contoh:
+                &lt;link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"&gt;
+                body {
+                    font-family: 'Poppins', sans-serif;
+                }
+            </pre>
+        </section>
+    </div>
+
+    <div class="main-container">
+        <aside class="materi">
+            <h2>HTML5 `datalist` Elemen</h2>
+        </aside>
+
+        <section class="content-area">
+            <h3>Penggunaan HTML5 `datalist` Elemen</h3>
+            <p>
+                Elemen `datalist` menspesifikasikan daftar dari pilihan yang telah ditentukan (pre-defined )
+                    untuk sebuah elemen `input`. Pengguna akan melihat daftar drop-down dari pilihan yang
+                    telah ditentukan sebagai input datanya. Atribut list dari elemen `input`, harus mengacu
+                    pada atribut id attribute dari elemen `datalist`.
+            </p>
+            <pre>
+                Contoh:
+                &lt;label for="browser"&gt;Choose your browser:&lt;/label&gt;
+                &lt;input list="browsers" id="browser" name="browser"&gt;
+                &lt;datalist id="browsers"&gt;
+                    &lt;option value="Chrome"&gt;
+                    &lt;option value="Firefox"&gt;
+                    &lt;option value="Safari"&gt;
+                    &lt;option value="Edge"&gt;
+                    &lt;option value="Opera"&gt;
+                &lt;/datalist&gt;
+            </pre>
+        </section>
+    </div>
+
+    <div class="main-container">
+        <aside class="materi">
+            <h2>HTML5 `keygen` Elemen</h2>
+        </aside>
+
+        <section class="content-area">
+            <h3>Penggunaan HTML5 `keygen` Elemen</h3>
+            <p>
+                Tujuan dari elemen `keygen` adalah untuk menyediakan cara yang aman untuk autentikasi
+para pengguna. Elemen `keygen` menspesifikasikan daerah pembangkit pasangan kunci
+(key-pair generator field ) dalam form. Ketika form di kirim (submitted), dua kunci (keys)
+dibangkitkan, satu sebagai private dan satunya sebagai public. private key disimpan secara
+lokal, dan public key dikirim ke server.
+            </p>
+            <pre>
+                Contoh:
+                &lt;form action="/action_page.php"&gt;
+                    &lt;label for="name"&gt;Name:&lt;/label&gt;
+                    &lt;input type="text" id="name" name="name"&gt;
+                    &lt;keygen name="key"&gt;
+                    &lt;input type="submit"&gt;
+                &lt;/form&gt;
+            </pre>
+        </section>
+    </div>
+
+
+
+    <footer class="footer">
+        <p>&copy; 2024 Joy Tambuwun. All rights reserved.</p>
+    </footer>
+</body>
+</html>
